@@ -1,0 +1,14 @@
+
+<fieldset>
+    <legend>Register</legend>
+    <form #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+       
+        Enter Email: <input type="text" name="email" ngModel><br/>
+        Enter Username: <input type="text" name="userName" ngModel><br/>
+        Enter Password: <input type="text" name="password" ngModel><br/>
+      
+        
+        
+        <button class="btn btn-primary">Register</button>
+    </form>
+</fieldset>

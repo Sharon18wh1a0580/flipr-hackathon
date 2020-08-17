@@ -1,0 +1,30 @@
+<html>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    INDEX
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">NSE</a>
+    <a class="dropdown-item" href="#"> BSE</a>
+    
+  </div>
+</div>
+
+<div class = "chart">
+    
+<ngx-charts-line-chart
+[scheme]="colorScheme"
+[results]="single"
+[gradient]="gradient"
+[xAxis]="showXAxis"
+[yAxis]="showYAxis"
+
+[showXAxisLabel]="showXAxisLabel"
+[showYAxisLabel]="showYAxisLabel"
+[xAxisLabel]="xAxisLabel"
+
+(select)="onSelect($event)">
+</ngx-charts-line-chart>
+
+</div>
+</html>
